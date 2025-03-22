@@ -47,7 +47,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Design the bento grid en penpot ![](./screenshot/Captura%20de%20pantalla%202025-03-22%20111817.png)
 - Structure the html and css.
--
+- Asign colors and border radius to css.
+- Place the paragrahsm, text and images.
 
 ### Built with
 
