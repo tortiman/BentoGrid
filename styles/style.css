@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    row-gap: 40px;
+    column-gap: 40px;
+    border-radius: 10px;
 }
 
 body{
@@ -32,84 +35,77 @@ body{
 .container-grid{
     width: 1300px;
     height: 930px;
-    background-color: beige;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    column-gap: 40px;
+    
 }
 
 .subcontainer-grid-left{
-    background-color: aqua;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    row-gap: 40px;
+    
 }
 
 .subcontainer-grid-left-up{
-    background-color: brown;
+    background-color: var(--Yellow100);
 }
 
 .subcontainer-grid-left-down{
-    background-color: burlywood;
+    background-color: var(--Yellow500);
 }
 
 .subcontainer-grid-right{
-    background-color: blue;
     display: grid;
     grid-template-rows: 2fr 1fr;
-    row-gap: 40px;
+    
 }
 
 .subcontainer-grid-right-up{
-    background-color: blueviolet;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 40px;
+
 }
 
 .subcontainer-grid-right-up-left{
-    background-color: wheat;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    row-gap: 40px;
+    
 }
 
 .subcontainer-grid-right-up-left-up{
-    background-color: violet;
+    background-color: var(--Purple500);
 }
 
 .subcontainer-grid-right-up-left-down{
-    background-color: antiquewhite;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    
 }
 
 .social-media{
-    background-color: cadetblue;
+    background-color: var(--White);
 }
 
 .calendar{
-    background-color: azure;
+    background-color: var(--Yellow500);
 }
 
 .subcontainer-grid-right-up-right{
-    background-color: tomato;
+    background-color:var(--Purple100);
 }
 
 .subcontainer-grid-right-down{
-    background-color: yellowgreen;
     display: grid;
     grid-template-columns: 1fr 2.21fr;
-    column-gap: 40px;
+    
 }
 
 .subcontainer-grid-right-down-left{
-    background-color: chartreuse;
+    background-color: var(--White);
 }
 
 .subcontainer-grid-right-down-right{
-    background-color: chocolate;
+    background-color: var(--Purple500);
 }
 
 

@@ -45,6 +45,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+- Design the bento grid en penpot ![](./screenshot/Captura%20de%20pantalla%202025-03-22%20111817.png)
+- Structure the html and css.
+-
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -62,19 +66,146 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<main class="main">
+  <article class="container-grid">
+    <div class="subcontainer-grid-left">
+      <div class="subcontainer-grid-left-up"></div>
+      <div class="subcontainer-grid-left-down"></div>
+    </div>
+    <div class="subcontainer-grid-right">
+      <div class="subcontainer-grid-right-up">
+        <div class="subcontainer-grid-right-up-left">
+          <div class="subcontainer-grid-right-up-left-up"></div>
+          <div class="subcontainer-grid-right-up-left-down">
+            <div class="social-media"></div>
+            <div class="calendar"></div>
+          </div>
+        </div>
+        <div class="subcontainer-grid-right-up-right"></div>
+      </div>
+      <div class="subcontainer-grid-right-down">
+        <div class="subcontainer-grid-right-down-left"></div>
+        <div class="subcontainer-grid-right-down-right"></div>
+      </div>
+    </div>
+  </article>
+</main>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+:root {
+  --Purple100: hsl(254, 88%, 90%);
+  --Purple500: hsl(256, 67%, 59%);
+  --Yellow100: hsl(31, 66%, 93%);
+  --Yellow500: hsl(39, 100%, 71%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
 }
-```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 1440px;
+  height: 1056px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-grid {
+  width: 1300px;
+  height: 930px;
+  background-color: beige;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 40px;
+}
+
+.subcontainer-grid-left {
+  background-color: aqua;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
+}
+
+.subcontainer-grid-left-up {
+  background-color: brown;
+}
+
+.subcontainer-grid-left-down {
+  background-color: burlywood;
+}
+
+.subcontainer-grid-right {
+  background-color: blue;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  row-gap: 40px;
+}
+
+.subcontainer-grid-right-up {
+  background-color: blueviolet;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 40px;
+}
+
+.subcontainer-grid-right-up-left {
+  background-color: wheat;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
+}
+
+.subcontainer-grid-right-up-left-up {
+  background-color: violet;
+}
+
+.subcontainer-grid-right-up-left-down {
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+}
+
+.social-media {
+  background-color: cadetblue;
+}
+
+.calendar {
+  background-color: azure;
+}
+
+.subcontainer-grid-right-up-right {
+  background-color: tomato;
+}
+
+.subcontainer-grid-right-down {
+  background-color: yellowgreen;
+  display: grid;
+  grid-template-columns: 1fr 2.21fr;
+  column-gap: 40px;
+}
+
+.subcontainer-grid-right-down-left {
+  background-color: chartreuse;
+}
+
+.subcontainer-grid-right-down-right {
+  background-color: chocolate;
+}
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
