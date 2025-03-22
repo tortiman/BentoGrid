@@ -1,0 +1,115 @@
+:root{
+    --Purple100: hsl(254, 88%, 90%);
+    --Purple500: hsl(256, 67%, 59%);
+    --Yellow100: hsl(31, 66%, 93%);
+    --Yellow500: hsl(39, 100%, 71%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 1440px;
+    height: 1056px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grid{
+    width: 1300px;
+    height: 930px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 40px;
+}
+
+.subcontainer-grid-left{
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+}
+
+.subcontainer-grid-left-up{
+    background-color: brown;
+}
+
+.subcontainer-grid-left-down{
+    background-color: burlywood;
+}
+
+.subcontainer-grid-right{
+    background-color: blue;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 40px;
+}
+
+.subcontainer-grid-right-up{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 40px;
+}
+
+.subcontainer-grid-right-up-left{
+    background-color: wheat;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+}
+
+.subcontainer-grid-right-up-left-up{
+    background-color: violet;
+}
+
+.subcontainer-grid-right-up-left-down{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.social-media{
+    background-color: cadetblue;
+}
+
+.calendar{
+    background-color: azure;
+}
+
+.subcontainer-grid-right-up-right{
+    background-color: tomato;
+}
+
+.subcontainer-grid-right-down{
+    background-color: yellowgreen;
+    display: grid;
+    grid-template-columns: 1fr 2.21fr;
+    column-gap: 40px;
+}
+
+.subcontainer-grid-right-down-left{
+    background-color: chartreuse;
+}
+
+.subcontainer-grid-right-down-right{
+    background-color: chocolate;
+}
+
+
