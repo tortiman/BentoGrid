@@ -218,13 +218,14 @@ body{
     justify-content:start;
     align-items: start;
     flex-direction: column;
+    gap: 25px;
 }
 
 .sgrur-text{
     font-size: 35px;
     width: 80%;
     color: var(--Black);
-    margin-top: 60px;
+    margin-top: 50px;
     line-height: 0.8;
     text-align: left;
     font-weight: 500;
@@ -238,6 +239,14 @@ body{
    margin-top: -10px;
 }
 
+.text-description{
+    margin-left: 35px;
+    font-size: 20px;
+    width: 70%;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
 .subcontainer-grid-right-down{
     display: grid;
     grid-template-columns: 1fr 2.21fr;
@@ -248,16 +257,42 @@ body{
     background-color: var(--White);
     display: flex;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
+    gap: 30px;
 }
 
 .text-56{
    font-size: 60px;
+   margin-top: 15px;
+   font-weight: 500;
+   margin-left: -60px;
+}
+
+.text-sgrdl{
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+.img-sgrdl{
+    width: 70%;
 }
 
 .subcontainer-grid-right-down-right{
     background-color: var(--Purple500);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
 }
 
+.img-sgrdr{
+    width: 40%;
+    margin-left: 25px;
+}
 
+.text-sgrdr{
+    color: var(--White);
+    font-size: 40px;
+    line-height: 0.9;
+}
