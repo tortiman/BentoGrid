@@ -163,14 +163,70 @@ body{
 
 .social-media{
     background-color: var(--White);
+    overflow: hidden;
+}
+
+.img-social-media{
+    width: 355px;
+    margin: 20px 0 0 25px;
+}
+
+.text-social-media{
+    font-size: 30px;
+    width: 80%;
+    color: var(--Black);
+    line-height: 0.9;
+    text-align: left;
+    font-weight: 500;
+    margin: 10px 0 0 25px;
 }
 
 .calendar{
     background-color: var(--Yellow500);
+    overflow: hidden;
+   
+}
+
+.text-calendar{
+    font-size: 30px;
+    width: 80%;
+    color: var(--Black);
+    line-height: 0.9;
+    text-align: left;
+    font-weight: 500;
+    margin: 10px 0 0 25px;
+}
+
+.img-calendar{
+    width: 80%;
+
 }
 
 .subcontainer-grid-right-up-right{
     background-color:var(--Purple100);
+    overflow: hidden;
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    flex-direction: column;
+}
+
+.sgrur-text{
+    font-size: 35px;
+    width: 80%;
+    color: var(--Black);
+    margin-top: 60px;
+    line-height: 0.8;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.img-schedule{
+   width:225,3px;
+   height: 330px;
+   margin-left: 35px;
+   margin-top: -10px;
 }
 
 .subcontainer-grid-right-down{
