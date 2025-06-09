@@ -94,8 +94,8 @@ body{
     text-align: left;
     width: 60%;
     line-height: 0.9;
-    margin-top: 30px;
-    margin-left: -30px;
+    margin-top: 0.7em;
+    margin-left: -0.7em;
 }
 
 .img-ai-content{
@@ -134,7 +134,7 @@ body{
     text-align: center;
     width: 80%;
     color: var(--White);
-    margin-top: 60px;
+    margin-top: 1em;
     line-height: 1;
 }
 
@@ -171,7 +171,7 @@ body{
 
 .img-social-media{
     width: 355px;
-    margin: 20px 0 0 25px;
+    margin: 0.5em 0 0 1.1em;
 }
 
 .text-social-media{
@@ -181,7 +181,7 @@ body{
     line-height: 0.9;
     text-align: left;
     font-weight: 500;
-    margin: 10px 0 0 25px;
+    margin: 0.5em 0 0 0.8em;
 }
 
 .calendar{
@@ -203,13 +203,13 @@ body{
     line-height: 0.9;
     text-align: left;
     font-weight: 500;
-    margin-top: 20px ;
+    margin-top: 0.6em ;
 }
 
 .img-calendar{
     position: absolute;
     width: 80%;
-    top:145px; 
+    top:9em; 
     
 }
 
@@ -227,22 +227,22 @@ body{
     font-size: 2.1em;
     width: 80%;
     color: var(--Black);
-    margin-top: 50px;
+    margin-top: 2em;
     line-height: 0.8;
     text-align: left;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 1em;
 }
 
 .img-schedule{
    width:225,3px;
    height: 330px;
-   margin-left: 35px;
-   margin-top: -10px;
+   margin-left: 2em;
+   margin-top: -0.2em;
 }
 
 .text-description{
-    margin-left: 35px;
+    margin-left: 2em;
     font-size: 1.2em;
     width: 70%;
     font-weight: 500;
@@ -266,14 +266,14 @@ body{
 
 .text-56{
    font-size: 4em;
-   margin-top: 15px;
+   margin-top: 0.35em;
    font-weight: 500;
-   margin-left: -60px;
+   margin-left: -0.8em;
 }
 
 .text-sgrdl{
     font-size: 1.1em;
-    margin-top: -15px;
+    margin-top: -0.8em;
 }
 
 .img-sgrdl{
@@ -290,7 +290,7 @@ body{
 
 .img-sgrdr{
     width: 40%;
-    margin-left: 25px;
+    margin-left: 1.5em;
 }
 
 .text-sgrdr{
@@ -300,3 +300,102 @@ body{
 }
 
 
+/* Media query para móviles (máximo 375px de ancho) */
+@media (max-width: 500px) {
+  body, .main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--White);
+  }
+
+  .main {
+    max-width: 400px;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .container-grid {
+    max-width: 400px;
+    width: 100vw;
+    min-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+  }
+
+  .subcontainer-grid-left,
+  .subcontainer-grid-right,
+  .subcontainer-grid-right-up,
+  .subcontainer-grid-right-up-left,
+  .subcontainer-grid-right-up-right,
+  .subcontainer-grid-right-up-left-down,
+  .subcontainer-grid-right-down,
+  .subcontainer-grid-right-down-left,
+  .subcontainer-grid-right-down-right,
+  .calendar,
+  .social-media {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sglu-text,
+  .sgld-text,
+  .sgrulu-text,
+  .text-calendar,
+  .text-social-media,
+  .sgrur-text,
+  .text-56,
+  .text-sgrdl,
+  .text-sgrdr {
+    font-size: 1.4em;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .img-create-post,
+  .img-ai-content,
+  .img-stars,
+  .img-social-media,
+  .img-calendar,
+  .img-schedule,
+  .img-sgrdl,
+  .img-sgrdr {
+    width: 90%;
+    height: auto;
+    margin: 0.5em 0;
+    position: static;
+    max-width: 300px;
+  }
+
+  .calendar {
+    height: auto;
+    min-height: 200px;
+    padding: 1em 0.5em;
+    position: relative;
+  }
+
+  .img-calendar {
+    position: static;
+    margin-top: 1em;
+  }
+}
